@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/brightonsbox/brightonsbox-serverless-graphql/issues"
   },
-  "homepage": "https://github.com/brightonsbox/brightonsbox-serverless-graphql#readme"
+  "homepage": "https://github.com/brightonsbox/brightonsbox-serverless-graphql#readme",
+  "dependencies": {
+    "@apollo/server": "^4.5.0",
+    "graphql": "^16.6.0"
+  }
 }
