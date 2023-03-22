@@ -19,9 +19,9 @@ At this point, I have spun up a quick working example. To run:
 
 ```shell
 npm install
-npm run start
+npm run dev
 ```
 
 Then navigate to http://localhost:4000 to reach the Sandbox. 
 
-
+I am now following serverless documentation [here](https://www.apollographql.com/docs/apollo-server/deployment/lambda).

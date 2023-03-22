@@ -2,10 +2,13 @@
   "name": "brightonsbox-serverless-graphql",
   "version": "1.0.0",
   "description": "An example of building a serverless GraphQL API using NodeJS and Apollo",
-  "main": "index.ts",
   "type": "module",
+  "engines": {
+    "node": "^18",
+    "npm": "^9"
+  },
   "scripts": {
-    "compile": "tsc",
+    "dev": "tsc && nodemon --watch /dist dist/local.js",
     "start": "npm run compile && node ./dist/index.js"
   },
   "repository": {
@@ -24,10 +27,12 @@
   "homepage": "https://github.com/brightonsbox/brightonsbox-serverless-graphql#readme",
   "dependencies": {
     "@apollo/server": "^4.5.0",
+    "@as-integrations/aws-lambda": "^2.0.1",
     "graphql": "^16.6.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.5",
+    "nodemon": "^2.0.22",
     "typescript": "^5.0.2"
   }
 }
