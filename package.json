@@ -2,7 +2,8 @@
   "name": "brightonsbox-serverless-graphql",
   "version": "1.0.0",
   "description": "An example of building a serverless GraphQL API using NodeJS and Apollo",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
     "compile": "tsc",
     "start": "npm run compile && node ./dist/index.js"
