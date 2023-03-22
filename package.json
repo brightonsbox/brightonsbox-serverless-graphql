@@ -4,7 +4,8 @@
   "description": "An example of building a serverless GraphQL API using NodeJS and Apollo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
   "dependencies": {
     "@apollo/server": "^4.5.0",
     "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "typescript": "^5.0.2"
   }
 }
