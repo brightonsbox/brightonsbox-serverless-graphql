@@ -1,0 +1,18 @@
+service: brightonsbox-serverless-graphql-lambda
+provider:
+  name: aws
+  runtime: nodejs18.x
+  httpApi:
+    cors: true
+functions:
+  graphql:
+    handler: src/server.graphqlHandler
+    events:
+      - httpApi:
+          path: /
+          method: POST
+      - httpApi:
+          path: /
+          method: GET
+plugins:
+  - serverless-plugin-typescript

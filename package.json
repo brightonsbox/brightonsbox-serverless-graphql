@@ -9,6 +9,9 @@
   },
   "scripts": {
     "dev": "tsc && nodemon --watch /dist dist/local.js",
+    "serverless-local": "serverless invoke local -f graphql -p example-query.json",
+    "serverless-deploy": "serverless deploy",
+    "serverless-remove": "serverless remove",
     "start": "npm run compile && node ./dist/index.js"
   },
   "repository": {
@@ -33,6 +36,8 @@
   "devDependencies": {
     "@types/node": "^18.15.5",
     "nodemon": "^2.0.22",
+    "serverless": "^3.28.1",
+    "serverless-plugin-typescript": "^2.1.4",
     "typescript": "^5.0.2"
   }
 }

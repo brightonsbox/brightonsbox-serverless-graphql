@@ -24,4 +24,31 @@ npm run dev
 
 Then navigate to http://localhost:4000 to reach the Sandbox. 
 
-I am now following serverless documentation [here](https://www.apollographql.com/docs/apollo-server/deployment/lambda).
+This can also be run using the `serverless` framework as described
+[here](https://www.apollographql.com/docs/apollo-server/deployment/lambda).
+
+To demonstrate it running locally and responding to an example query
+defined in the [example-query.json](example-query.json) file, run:
+
+````shell
+npm run serverless-local
+````
+
+To deploy to your AWS account, run:
+
+```shell
+export AWS_SECRET_ACCESS_KEY=...
+export AWS_ACCESS_KEY_ID=...
+```
+
+with relevant credentials, then run:
+
+```shell
+npm run serverless-deploy
+```
+
+To remove from your AWS account, run:
+
+```shell
+npm run serverless-remove
+```
