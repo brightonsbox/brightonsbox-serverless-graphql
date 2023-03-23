@@ -12,5 +12,5 @@
   },
   "rawPath": "/",
   "routeKey": "/",
-  "body": "{\"operationName\": null, \"variables\": null, \"query\": \"{ roles { organisation, title } }\"}"
+  "body": "{\"operationName\": null, \"variables\": null, \"query\": \"{ skills { name, category } }\"}"
 }
